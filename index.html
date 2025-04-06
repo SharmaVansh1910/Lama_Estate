@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LamaEstate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-white font-sans">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-4 shadow-md">
+      <h1 class="text-2xl font-bold">🏠 LamaEstate</h1>
+      <ul class="hidden md:flex gap-8 font-medium text-gray-700">
+        <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-500">About</a></li>
+        <li><a href="#" class="hover:text-yellow-500">Contact</a></li>
+        <li><a href="#" class="hover:text-yellow-500">Agents</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <button class="text-sm text-gray-700 hover:text-yellow-500">
+          Sign in
+        </button>
+        <button
+          class="bg-yellow-400 px-4 py-2 rounded text-sm font-semibold hover:bg-yellow-500"
+        >
+          Sign up
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative flex flex-col lg:flex-row items-center justify-between px-6 py-12 max-w-7xl mx-auto gap-10 overflow-hidden"
+    >
+      <!-- Decorative Background Shapes -->
+      <div
+        class="absolute -top-20 -left-20 w-96 h-96 bg-yellow-300 rounded-full opacity-30 -z-10"
+      ></div>
+      <div
+        class="absolute top-0 right-0 w-64 h-64 bg-black rounded-full opacity-20 -z-10 blur-xl"
+      ></div>
+
+      <!-- Left Text -->
+      <div class="max-w-xl z-10">
+        <h2 class="text-4xl font-bold leading-tight text-gray-900 mb-4">
+          Find Real Estate &<br />
+          Get Your Dream Place
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo
+          suscipit cum eius, iure est nulla animi.
+        </p>
+
+        <!-- Tabs -->
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <div class="flex border-b mb-4">
+            <button
+              class="tab-btn px-4 py-2 text-sm font-medium text-white bg-black rounded-t"
+            >
+              Buy
+            </button>
+            <button
+              class="tab-btn px-4 py-2 text-sm font-medium text-gray-700 hover:text-black"
+            >
+              Rent
+            </button>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <input
+              type="text"
+              placeholder="City"
+              class="flex-1 px-4 py-2 border rounded"
+            />
+            <input
+              type="text"
+              placeholder="Min Price"
+              class="flex-1 px-4 py-2 border rounded"
+            />
+            <input
+              type="text"
+              placeholder="Max Price"
+              class="flex-1 px-4 py-2 border rounded"
+            />
+            <button class="bg-yellow-400 px-6 py-2 rounded hover:bg-yellow-500">
+              Search 🔍
+            </button>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="mt-6 flex gap-10 text-center">
+          <div>
+            <h3 class="text-xl font-bold">16+</h3>
+            <p class="text-sm text-gray-500">Years of Experience</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold">200</h3>
+            <p class="text-sm text-gray-500">Award Gained</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold">2000+</h3>
+            <p class="text-sm text-gray-500">Property Ready</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Image Stack -->
+      <div class="relative flex flex-col gap-8 items-center z-10">
+        <!-- Top Image -->
+        <div class="relative w-56">
+          <div
+            class="absolute -bottom-3 -right-3 w-full h-full bg-yellow-300 rounded-2xl -z-10"
+          ></div>
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.wBVJJYrj-E4nuZrbzsT9CAHaLH?pid=Api"
+            class="rounded-2xl shadow-lg w-full"
+          />
+        </div>
+
+        <!-- Middle Image (Circle) -->
+        <div class="relative w-48 h-48">
+          <div
+            class="absolute -bottom-2 -right-2 w-full h-full bg-gray-200 rounded-full -z-10 shadow-md"
+          ></div>
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.XJ9Ug27T1W6cPJXYsiviOgHaK5?pid=Api"
+            class="rounded-full shadow-lg w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Bottom Image -->
+        <div class="relative w-56">
+          <div
+            class="absolute -bottom-3 -right-3 w-full h-full bg-yellow-300 rounded-2xl -z-10"
+          ></div>
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.gE0GiacJmKUQRv9lcI-x2wHaE8?pid=Api"
+            class="rounded-2xl shadow-lg w-full"
+          />
+        </div>
+      </div>
+
+      <!-- Yellow background behind text -->
+      <div
+        class="absolute -top-10 -left-24 w-[500px] h-[500px] bg-yellow-200 rounded-full opacity-30 -z-10 hidden lg:block"
+      ></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
